@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MyMovieTutorial.Web.props" />
+</Project>
