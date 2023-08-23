@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Memory;
 using MyMovieTutorial.Administration;
 using Serenity;
 using Serenity.Abstractions;
@@ -18,9 +18,13 @@ namespace MyMovieTutorial.Administration.Repositories
 {
     public class UserPermissionRepository : BaseRepository
     {
-        public UserPermissionRepository(IRequestContext context)
-             : base(context)
+        public ITypeSource TypeSource { get; }
+        public ISqlConnections SqlConnections { get; }
+        public UserPermissionRepository(IRequestContext context, ITypeSource typeSource, ISqlConnections sqlConnections)
+           : base(context)
         {
+            TypeSource = typeSource ?? throw new ArgumentNullException(nameof(typeSource));
+            SqlConnections = sqlConnections ?? throw new ArgumentNullException(nameof(sqlConnections));
         }
 
         private static MyRow.RowFields Fld { get { return MyRow.Fields; } }
@@ -42,6 +46,10 @@ namespace MyMovieTutorial.Administration.Repositories
             var newList = new Dictionary<string, bool>(StringComparer.OrdinalIgnoreCase);
             foreach (var p in request.Permissions)
                 newList[p.PermissionKey] = p.Granted ?? false;
+
+            var allowedKeys = ListPermissionKeys(this.Cache, this.SqlConnections, this.TypeSource);
+            if (newList.Keys.Any(x => !allowedKeys.Contains(x)))
+                throw new AccessViolationException();
 
             if (oldList.Count == newList.Count &&
                 oldList.All(x => newList.ContainsKey(x.Key) && newList[x.Key] == x.Value))
@@ -236,7 +244,7 @@ namespace MyMovieTutorial.Administration.Repositories
                             ProcessAttributes<PermissionAttributeBase>(result, member, x => x.Permission);
                 }
 
-                result.Remove("ImpersonateAs");
+                result.Remove(Administration.PermissionKeys.Tenants);
                 result.Remove("*");
                 result.Remove("?");
 

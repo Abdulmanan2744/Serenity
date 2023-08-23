@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Options;
+using MyMovieTutorial.Web.Modules.Administration;
+using Serenity;
 using Serenity.Data;
 using Serenity.Extensions;
 using Serenity.Extensions.Entities;
@@ -22,11 +24,15 @@ namespace MyMovieTutorial.Administration
                 throw new System.ArgumentNullException(nameof(environmentOptions));
         }
 
+        
+
         protected override void ValidateRequest()
         {
             base.ValidateRequest();
 
             environmentOptions.CheckPublicDemo(Row.UserId);
+            if (Row.TenantId != User.GetTenantId())
+                Permissions.ValidatePermission(PermissionKeys.Tenants, Context.Localizer);
         }
 
         protected override void OnBeforeDelete()

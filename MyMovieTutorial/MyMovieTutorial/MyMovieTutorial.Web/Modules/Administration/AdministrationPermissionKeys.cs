@@ -1,4 +1,4 @@
-﻿
+
 using Serenity.ComponentModel;
 using System.ComponentModel;
 
@@ -13,5 +13,8 @@ namespace MyMovieTutorial.Administration
 
         [Description("Languages and Translations")]
         public const string Translation = "Administration:Translation";
+
+        [Description("Tenant Management")]
+        public const string Tenants = "Administration:Tenants";
     }
 }

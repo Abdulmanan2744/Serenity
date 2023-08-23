@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Serenity.Abstractions;
 using Serenity.Data;
 using Serenity.Services;
@@ -14,19 +14,25 @@ namespace MyMovieTutorial.Administration.Endpoints
     public class UserPermissionController : ServiceEndpoint
     {
         [HttpPost, AuthorizeUpdate(typeof(MyRow))]
-        public SaveResponse Update(IUnitOfWork uow, UserPermissionUpdateRequest request)
+        public SaveResponse Update(IUnitOfWork uow, UserPermissionUpdateRequest request,
+    [FromServices] ITypeSource typeSource,
+    [FromServices] ISqlConnections sqlConnections)
         {
-            return new MyRepository(Context).Update(uow, request);
+            return new MyRepository(Context, typeSource, sqlConnections).Update(uow, request);
         }
 
-        public ListResponse<MyRow> List(IDbConnection connection, UserPermissionListRequest request)
+        public ListResponse<MyRow> List(IDbConnection connection, UserPermissionListRequest request,
+            [FromServices] ITypeSource typeSource,
+            [FromServices] ISqlConnections sqlConnections)
         {
-            return new MyRepository(Context).List(connection, request);
+            return new MyRepository(Context, typeSource, sqlConnections).List(connection, request);
         }
 
-        public ListResponse<string> ListRolePermissions(IDbConnection connection, UserPermissionListRequest request)
+        public ListResponse<string> ListRolePermissions(IDbConnection connection, UserPermissionListRequest request,
+            [FromServices] ITypeSource typeSource,
+            [FromServices] ISqlConnections sqlConnections)
         {
-            return new MyRepository(Context).ListRolePermissions(connection, request);
+            return new MyRepository(Context, typeSource, sqlConnections).ListRolePermissions(connection, request);
         }
 
         public ListResponse<string> ListPermissionKeys(

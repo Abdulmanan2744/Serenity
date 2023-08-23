@@ -1,0 +1,1049 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\all.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\all.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\_all.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\_all.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\aero.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\aero.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\aero.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\aero.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\aero@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\aero@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\blue.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\blue.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\blue.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\blue.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\blue@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\blue@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\flat.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\flat.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\flat.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\flat.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\flat@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\flat@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\green.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\green.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\green.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\green.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\green@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\green@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\grey.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\grey.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\grey.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\grey.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\grey@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\grey@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\orange.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\orange.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\orange.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\orange.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\orange@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\orange@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\pink.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\pink.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\pink.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\pink.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\pink@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\pink@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\purple.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\purple.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\purple.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\purple.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\purple@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\purple@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\red.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\red.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\red.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\red.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\red@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\red@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\yellow.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\yellow.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\yellow.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\yellow.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\flat\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\flat\\yellow@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\futurico\\futurico.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\futurico\\futurico.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\futurico\\futurico.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\futurico\\futurico.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\futurico\\futurico@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\futurico\\futurico@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\_all.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\_all.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\aero.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\aero.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\blue.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\blue.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\green.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\green.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\grey.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\grey.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\line.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\line.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\line.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\line.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\line@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\line@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\orange.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\orange.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\pink.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\pink.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\purple.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\purple.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\red.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\red.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\line\\yellow.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\line\\yellow.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\_all.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\_all.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\aero.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\aero.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\aero.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\aero.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\aero@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\aero@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\blue.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\blue.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\blue.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\blue.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\blue@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\blue@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\green.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\green.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\green.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\green.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\green@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\green@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\grey.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\grey.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\grey.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\grey.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\grey@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\grey@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\minimal.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\minimal.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\minimal.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\minimal.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\minimal@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\minimal@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\orange.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\orange.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\orange.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\orange.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\orange@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\orange@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\pink.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\pink.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\pink.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\pink.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\pink@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\pink@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\purple.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\purple.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\purple.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\purple.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\purple@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\purple@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\red.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\red.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\red.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\red.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\red@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\red@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\yellow.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\yellow.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\yellow.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\yellow.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\minimal\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\minimal\\yellow@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\polaris\\polaris.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\polaris\\polaris.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\polaris\\polaris.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\polaris\\polaris.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\polaris\\polaris@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\polaris\\polaris@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\_all.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\_all.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\aero.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\aero.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\aero.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\aero.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\aero@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\aero@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\blue.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\blue.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\blue.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\blue.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\blue@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\blue@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\green.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\green.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\green.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\green.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\green@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\green@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\grey.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\grey.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\grey.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\grey.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\grey@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\grey@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\orange.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\orange.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\orange.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\orange.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\orange@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\orange@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\pink.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\pink.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\pink.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\pink.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\pink@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\pink@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\purple.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\purple.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\purple.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\purple.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\purple@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\purple@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\red.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\red.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\red.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\red.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\red@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\red@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\square.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\square.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\square.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\square.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\square@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\square@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\yellow.css",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\yellow.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\yellow.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\yellow.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\iCheck\\square\\yellow@2x.png",
+      "PackagePath": "staticwebassets\\Content\\iCheck\\square\\yellow@2x.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\32px.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\32px.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\alarm-clock.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\alarm-clock.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\application-resize-actual.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\application-resize-actual.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\application-resize-full.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\application-resize-full.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\arrow-circle-135.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\arrow-circle-135.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\arrow-curve-left.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\arrow-curve-left.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\arrow-down.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\arrow-down.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\arrow-step-over.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\arrow-step-over.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\back-arrow-white.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\back-arrow-white.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\balance.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\balance.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\bomb.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\bomb.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\box.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\box.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\calculator3.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\calculator3.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\calendar-blue.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\calendar-blue.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\check2.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\check2.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\checkbox-no.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\checkbox-no.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\checkbox-null.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\checkbox-null.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\checkbox-states.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\checkbox-states.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\checkbox-yes.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\checkbox-yes.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\clock.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\clock.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\cross-script.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\cross-script.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\cross.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\cross.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\csv.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\csv.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\data-sync.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\data-sync.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\delete.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\delete.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\delete2.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\delete2.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\document-copy.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\document-copy.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\document-task.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\document-task.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\docx.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\docx.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\down.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\down.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\dropdown.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\dropdown.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\edit.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\edit.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\eraser-plus.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\eraser-plus.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\eraser.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\eraser.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\folder-import.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\folder-import.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\full-screen-2.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\full-screen-2.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\gtk-print-preview.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\gtk-print-preview.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\header-columns-bg.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\header-columns-bg.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\header-columns-over-bg.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\header-columns-over-bg.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\icon_sprite.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\icon_sprite.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\lock.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\lock.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\magnifier-left.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\magnifier-left.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\magnifier.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\magnifier.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\mail.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\mail.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\maximize-button.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\maximize-button.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\mhtml.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\mhtml.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\money.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\money.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\node-insert-next.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\node-insert-next.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\node-select-all.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\node-select-all.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\ok.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\ok.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\outlook.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\outlook.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\pager-load.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\pager-load.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\paper-clip.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\paper-clip.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\pencil.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\pencil.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\quick-search-loading.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\quick-search-loading.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\slash.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\slash.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\spreadsheet.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\spreadsheet.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\star-pencil.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\star-pencil.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\sticky-note-plus.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\sticky-note-plus.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\store.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\store.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\table.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\table.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\tag-label.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\tag-label.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\thumb-file-72.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\thumb-file-72.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\tick-empty.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\tick-empty.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\tick-green.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\tick-green.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\tick-red.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\tick-red.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\toggle-expand.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\toggle-expand.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\toggle.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\toggle.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\trash.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\trash.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\unchecked.gif",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\unchecked.gif"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\universal.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\universal.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\unlock-disable.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\unlock-disable.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\unlock.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\unlock.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\users.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\users.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\wand-plus.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\wand-plus.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\wheel.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\wheel.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\xml.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\xml.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\images\\zoom.png",
+      "PackagePath": "staticwebassets\\Content\\serenity\\images\\zoom.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\serenity.bootstrap.messagedialogs.css",
+      "PackagePath": "staticwebassets\\Content\\serenity\\serenity.bootstrap.messagedialogs.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\serenity.css",
+      "PackagePath": "staticwebassets\\Content\\serenity\\serenity.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\serenity.editors.css",
+      "PackagePath": "staticwebassets\\Content\\serenity\\serenity.editors.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\serenity\\serenity.jquery-ui.messagedialogs.css",
+      "PackagePath": "staticwebassets\\Content\\serenity\\serenity.jquery-ui.messagedialogs.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\common-theme.css",
+      "PackagePath": "staticwebassets\\Content\\site\\common-theme.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\accordion-arrows.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\accordion-arrows.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\serenity-logo-40.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\serenity-logo-40.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\serenity-logo-g-40.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\serenity-logo-g-40.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\serenity-logo-w-128.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\serenity-logo-w-128.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\serenity-logo-w-40.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\serenity-logo-w-40.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\tick-empty.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\tick-empty.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\tick-green-partial.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\tick-green-partial.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\images\\tick-red-partial.png",
+      "PackagePath": "staticwebassets\\Content\\site\\images\\tick-red-partial.png"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\site.css",
+      "PackagePath": "staticwebassets\\Content\\site\\site.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Content\\site\\site.htmlcontent.css",
+      "PackagePath": "staticwebassets\\Content\\site\\site.htmlcontent.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\datepicker\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\Scripts\\datepicker\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\datepicker\\datepicker3.css",
+      "PackagePath": "staticwebassets\\Scripts\\datepicker\\datepicker3.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\daterangepicker\\daterangepicker-bs3.css",
+      "PackagePath": "staticwebassets\\Scripts\\daterangepicker\\daterangepicker-bs3.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\Scripts\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\fullcalendar\\fullcalendar.css",
+      "PackagePath": "staticwebassets\\Scripts\\fullcalendar\\fullcalendar.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\fullcalendar\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\Scripts\\fullcalendar\\fullcalendar.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\fullcalendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\Scripts\\fullcalendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\fullcalendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\fullcalendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\fullcalendar\\fullcalendar.print.css",
+      "PackagePath": "staticwebassets\\Scripts\\fullcalendar\\fullcalendar.print.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\jvectormap\\jquery-jvectormap-1.2.2.css",
+      "PackagePath": "staticwebassets\\Scripts\\jvectormap\\jquery-jvectormap-1.2.2.css"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\jvectormap\\jquery-jvectormap-1.2.2.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\jvectormap\\jquery-jvectormap-1.2.2.min.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\jvectormap\\jquery-jvectormap-world-mill-en.js",
+      "PackagePath": "staticwebassets\\Scripts\\jvectormap\\jquery-jvectormap-world-mill-en.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\knob\\jquery.knob.js",
+      "PackagePath": "staticwebassets\\Scripts\\knob\\jquery.knob.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\site\\common-theme.js",
+      "PackagePath": "staticwebassets\\Scripts\\site\\common-theme.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\sparkline\\jquery.sparkline.js",
+      "PackagePath": "staticwebassets\\Scripts\\sparkline\\jquery.sparkline.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\Scripts\\sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Language\\LanguagePage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Language\\LanguagePage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Language\\LanguagePage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Language\\LanguagePage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Role\\RolePage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Role\\RolePage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Role\\RolePage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Role\\RolePage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Translation\\TranslationPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Translation\\TranslationPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\Translation\\TranslationPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Translation\\TranslationPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\User\\UserPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\User\\UserPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Administration\\User\\UserPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\User\\UserPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Common\\ScriptInit.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Common\\ScriptInit.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Common\\ScriptInit.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Common\\ScriptInit.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ChangePassword\\ChangePasswordPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ChangePassword\\ChangePasswordPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ChangePassword\\ChangePasswordPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ChangePassword\\ChangePasswordPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ForgotPassword\\ForgotPasswordPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ForgotPassword\\ForgotPasswordPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ForgotPassword\\ForgotPasswordPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ForgotPassword\\ForgotPasswordPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\Login\\LoginPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\Login\\LoginPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\Login\\LoginPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\Login\\LoginPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ResetPassword\\ResetPasswordPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ResetPassword\\ResetPasswordPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\ResetPassword\\ResetPasswordPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\ResetPassword\\ResetPasswordPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\SignUp\\SignUpPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\SignUp\\SignUpPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\Modules\\Membership\\Account\\SignUp\\SignUpPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Membership\\Account\\SignUp\\SignUpPage.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-65EVPBFJ.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-65EVPBFJ.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-65EVPBFJ.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-65EVPBFJ.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-66UIFGRO.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-66UIFGRO.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-66UIFGRO.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-66UIFGRO.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-6G4JLE2T.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-6G4JLE2T.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-6G4JLE2T.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-6G4JLE2T.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-RK3EK3FG.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-RK3EK3FG.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-RK3EK3FG.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-RK3EK3FG.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-V56BTN3W.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-V56BTN3W.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\esm\\_chunks\\chunk-V56BTN3W.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-V56BTN3W.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\lib\\chartjs\\chart.js",
+      "PackagePath": "staticwebassets\\lib\\chartjs\\chart.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\lib\\chartjs\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\chartjs\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MultiTenancy\\MultiTenancy\\MultiTenancy.Web\\wwwroot\\lib\\moment.js\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\moment.js\\moment.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MultiTenancy.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MultiTenancy.Web.props",
+      "PackagePath": "build\\MultiTenancy.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MultiTenancy.Web.props",
+      "PackagePath": "buildMultiTargeting\\MultiTenancy.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MultiTenancy.Web.props",
+      "PackagePath": "buildTransitive\\MultiTenancy.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

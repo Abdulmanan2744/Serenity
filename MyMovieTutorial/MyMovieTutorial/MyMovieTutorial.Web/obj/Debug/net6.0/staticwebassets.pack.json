@@ -909,6 +909,14 @@
       "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Role\\RolePage.js.map"
     },
     {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\Modules\\Administration\\Tenants\\TenantsPage.js",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Tenants\\TenantsPage.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\Modules\\Administration\\Tenants\\TenantsPage.js.map",
+      "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Tenants\\TenantsPage.js.map"
+    },
+    {
       "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\Modules\\Administration\\Translation\\TranslationPage.js",
       "PackagePath": "staticwebassets\\esm\\Modules\\Administration\\Translation\\TranslationPage.js"
     },
@@ -1005,6 +1013,14 @@
       "PackagePath": "staticwebassets\\esm\\Modules\\MovieDB\\Person\\PersonPage.js.map"
     },
     {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-CXKY5VTN.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-CXKY5VTN.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-CXKY5VTN.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-CXKY5VTN.js.map"
+    },
+    {
       "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-DZEAZ5MW.js",
       "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-DZEAZ5MW.js"
     },
@@ -1029,20 +1045,12 @@
       "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-FEDAVPE7.js.map"
     },
     {
-      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-HII5A43D.js",
-      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-HII5A43D.js"
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-JSTRJXMM.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-JSTRJXMM.js"
     },
     {
-      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-HII5A43D.js.map",
-      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-HII5A43D.js.map"
-    },
-    {
-      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-LDMIH4OQ.js",
-      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-LDMIH4OQ.js"
-    },
-    {
-      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-LDMIH4OQ.js.map",
-      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-LDMIH4OQ.js.map"
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-JSTRJXMM.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-JSTRJXMM.js.map"
     },
     {
       "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-QICOKEM2.js",
@@ -1051,6 +1059,14 @@
     {
       "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-QICOKEM2.js.map",
       "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-QICOKEM2.js.map"
+    },
+    {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-SLNBCATZ.js",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-SLNBCATZ.js"
+    },
+    {
+      "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\esm\\_chunks\\chunk-SLNBCATZ.js.map",
+      "PackagePath": "staticwebassets\\esm\\_chunks\\chunk-SLNBCATZ.js.map"
     },
     {
       "Id": "C:\\Serenity\\MyMovieTutorial\\MyMovieTutorial\\MyMovieTutorial.Web\\wwwroot\\favicon.ico",

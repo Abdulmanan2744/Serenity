@@ -1,4 +1,7 @@
-﻿using Serenity.ComponentModel;
+using Serenity;
+using System;
+using System.ComponentModel;
+using Serenity.ComponentModel;
 using System.Collections.Generic;
 
 namespace MyMovieTutorial.Administration.Forms
@@ -7,19 +10,21 @@ namespace MyMovieTutorial.Administration.Forms
     [BasedOnRow(typeof(UserRow), CheckNames = true)]
     public class UserForm
     {
-        [LabelWidth(200, UntilNext = true)]
+
+
         public string Username { get; set; }
         public string DisplayName { get; set; }
-        [EmailAddressEditor]
+        [EmailEditor]
         public string Email { get; set; }
-        [LookupEditor(typeof(RoleRow), Multiple = true)]
-        public List<int> Roles { get; set; }
-        public string UserImage { get; set; }
-        [PasswordEditor, Required(true)]
+        [PasswordEditor]
         public string Password { get; set; }
-        [PasswordEditor, Required(true)]
+        [PasswordEditor, OneWay]
         public string PasswordConfirm { get; set; }
         [OneWay]
         public string Source { get; set; }
+        public int? TenantId { get; set; }
+
+
+
     }
 }

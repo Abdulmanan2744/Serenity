@@ -1,4 +1,5 @@
-﻿using Serenity;
+using Serenity;
+using Serenity.Abstractions;
 using Serenity.Data;
 using Serenity.Services;
 using System;
@@ -11,10 +12,16 @@ namespace MyMovieTutorial.Administration.Repositories
 {
     public class RolePermissionRepository : BaseRepository
     {
-        public RolePermissionRepository(IRequestContext context)
-             : base(context)
+        public ITypeSource TypeSource { get; }
+        public ISqlConnections SqlConnections { get; }
+
+        public RolePermissionRepository(IRequestContext context, ITypeSource typeSource, ISqlConnections sqlConnections)
+                : base(context)
         {
+            TypeSource = typeSource ?? throw new ArgumentNullException(nameof(typeSource));
+            SqlConnections = sqlConnections ?? throw new ArgumentNullException(nameof(sqlConnections));
         }
+
 
         private static MyRow.RowFields Fld { get { return MyRow.Fields; } }
 
@@ -34,6 +41,11 @@ namespace MyMovieTutorial.Administration.Repositories
 
             var newList = new HashSet<string>(request.Permissions.ToList(),
                 StringComparer.OrdinalIgnoreCase);
+
+            var allowedKeys = UserPermissionRepository
+          .ListPermissionKeys(this.Cache, this.SqlConnections, this.TypeSource);
+            if (newList.Any(x => !allowedKeys.Contains(x)))
+                throw new AccessViolationException();
 
             if (oldList.SetEquals(newList))
                 return new SaveResponse();

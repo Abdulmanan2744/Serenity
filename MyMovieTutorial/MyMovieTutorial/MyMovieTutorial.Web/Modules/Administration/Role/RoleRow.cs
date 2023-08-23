@@ -1,4 +1,4 @@
-﻿using Serenity.ComponentModel;
+using Serenity.ComponentModel;
 using Serenity.Data;
 using Serenity.Data.Mapping;
 using System;
@@ -27,6 +27,13 @@ namespace MyMovieTutorial.Administration
             set => fields.RoleName[this] = value;
         }
 
+        [Insertable(false), Updatable(false)]
+        public int? TenantId
+        {
+            get => Fields.TenantId[this];
+            set => Fields.TenantId[this] = value;
+        }
+
         public RoleRow()
         {
         }
@@ -40,6 +47,7 @@ namespace MyMovieTutorial.Administration
         {
             public Int32Field RoleId;
             public StringField RoleName;
+            public Int32Field TenantId;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Options;
+using MyMovieTutorial.Web.Modules.Administration;
 using Serenity;
 using Serenity.Data;
 using Serenity.Extensions;
@@ -66,6 +67,9 @@ namespace MyMovieTutorial.Administration
 
             if (IsUpdate)
             {
+                if (Old.TenantId != User.GetTenantId())
+                    Permissions.ValidatePermission(PermissionKeys.Tenants, Context.Localizer);
+
                 environmentOptions.CheckPublicDemo(Row.UserId);
 
                 if (Row.Username != Old.Username)
@@ -99,6 +103,11 @@ namespace MyMovieTutorial.Administration
             {
                 Row.Source = "site";
                 Row.IsActive = Row.IsActive ?? 1;
+                if (!Permissions.HasPermission(PermissionKeys.Tenants) ||
+                Row.TenantId == null)
+                {
+                    Row.TenantId = User.GetTenantId();
+                }
             }
 
             if (IsCreate || !Row.Password.IsEmptyOrNull())

@@ -1,4 +1,4 @@
-﻿using Serenity.ComponentModel;
+using Serenity.ComponentModel;
 using Serenity.Data;
 using Serenity.Data.Mapping;
 using System;
@@ -99,6 +99,22 @@ namespace MyMovieTutorial.Administration
             set => fields.LastDirectoryUpdate[this] = value;
         }
 
+        [DisplayName("Tenant"), ForeignKey("Tenants", "TenantId"), LeftJoin("tnt")]
+        [LookupEditor(typeof(TenantsRow))]
+        [ReadPermission(PermissionKeys.Tenants)]
+        public int? TenantId
+        {
+            get => Fields.TenantId[this];
+            set => Fields.TenantId[this] = value;
+        }
+
+        [DisplayName("Tenant"), Expression("tnt.TenantName")]
+        public string TenantName
+        {
+            get => Fields.TenantName[this];
+            set => Fields.TenantName[this] = value;
+        }
+
         [DisplayName("Roles"), LinkingSetRelation(typeof(UserRoleRow), nameof(UserRoleRow.UserId), nameof(UserRoleRow.RoleId))]
         [LookupEditor(typeof(RoleRow), Multiple = true)]
         public List<int> Roles
@@ -123,7 +139,7 @@ namespace MyMovieTutorial.Administration
 
         public class RowFields : Serenity.Extensions.Entities.LoggingRowFields
         {
-            public Int32Field UserId;
+            public Int32Field  UserId;
             public StringField Username;
             public StringField Source;
             public StringField PasswordHash;
@@ -132,8 +148,9 @@ namespace MyMovieTutorial.Administration
             public StringField Email;
             public StringField UserImage;
             public DateTimeField LastDirectoryUpdate;
-            public Int16Field IsActive;
-
+            public Int16Field  IsActive;
+            public Int32Field  TenantId;
+            public StringField TenantName;
             public StringField Password;
             public StringField PasswordConfirm;
 

@@ -1,4 +1,4 @@
-﻿using Serenity;
+using Serenity;
 using Serenity.Abstractions;
 using Serenity.Data;
 using System;
@@ -39,7 +39,8 @@ namespace MyMovieTutorial.Administration
                     PasswordHash = user.PasswordHash,
                     PasswordSalt = user.PasswordSalt,
                     UpdateDate = user.UpdateDate,
-                    LastDirectoryUpdate = user.LastDirectoryUpdate
+                    LastDirectoryUpdate = user.LastDirectoryUpdate,
+                    TenantId = user.TenantId.Value
                 };
 
             return null;
@@ -47,6 +48,7 @@ namespace MyMovieTutorial.Administration
 
         public IUserDefinition ById(string id)
         {
+
             return Cache.Get("UserByID_" + id, TimeSpan.Zero, TimeSpan.FromDays(1), Fld.GenerationKey, () =>
             {
                 using var connection = SqlConnections.NewByKey("Default");
@@ -54,8 +56,12 @@ namespace MyMovieTutorial.Administration
             });
         }
 
+        
+       
         public IUserDefinition ByUsername(string username)
         {
+
+
             if (username.IsEmptyOrNull())
                 return null;
 
@@ -65,6 +71,8 @@ namespace MyMovieTutorial.Administration
                 using var connection = SqlConnections.NewByKey("Default");
                 return GetFirst(connection, new Criteria(Fld.Username) == username);
             });
+
+
         }
 
         public static void RemoveCachedUser(ITwoLevelCache cache, int? userId, string username)
@@ -81,11 +89,11 @@ namespace MyMovieTutorial.Administration
         {
             if (userRetriever is null)
                 throw new ArgumentNullException(nameof(userRetriever));
-
+            
             if (username is null)
                 throw new ArgumentNullException(nameof(username));
 
-            var user = userRetriever.ByUsername(username);
+            var user = (UserDefinition)userRetriever.ByUsername(username);
             if (user == null)
                 throw new ArgumentOutOfRangeException(nameof(username));
 
@@ -94,8 +102,10 @@ namespace MyMovieTutorial.Administration
 
             var identity = new GenericIdentity(username, authType);
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id));
+            identity.AddClaim(new Claim("TenantId", user.TenantId.ToInvariant()));
 
             return new ClaimsPrincipal(identity);
         }
+
     }
 }

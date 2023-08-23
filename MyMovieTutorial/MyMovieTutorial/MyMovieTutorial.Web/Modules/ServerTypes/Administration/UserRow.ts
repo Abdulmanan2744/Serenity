@@ -11,6 +11,8 @@ export interface UserRow {
     UserImage?: string;
     LastDirectoryUpdate?: string;
     IsActive?: number;
+    TenantId?: number;
+    TenantName?: string;
     Password?: string;
     PasswordConfirm?: string;
     Roles?: number[];
