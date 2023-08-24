@@ -3,17 +3,16 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Xml;
 using Newtonsoft.Json;
+using System.Dynamic;
 
 namespace ContosoUniversity.DAL
 {
     public class DBHelper
     {
-
-
-
-        static void Main(string[] args)
+         // code work creating json files
+        static public void getnode()
         {
-            string connectionString = "Server=your_server_name;Database=your_database_name;User Id=your_username;Password=your_password;";
+            string connectionString = "Server=192.168.10.176;Database=SBODemoAU;User Id=sa; Password=P@ssw0rd;";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -21,10 +20,9 @@ namespace ContosoUniversity.DAL
                 {
                     connection.Open();
 
-                    string query = "SELECT cdr1, cdr2 FROM YourTableName"; // Replace YourTableName with the actual table name
+                    string query = "SELECT CardCode,CardName, CardType, Address FROM OCRD"; // Replace YourTableName with the actual table name
 
-                    List<string> cdr1List = new List<string>();
-                    List<string> cdr2List = new List<string>();
+                    List<ExpandoObject> dynamicModels = new List<ExpandoObject>();
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -32,25 +30,32 @@ namespace ContosoUniversity.DAL
                         {
                             while (reader.Read())
                             {
-                                string cdr1Value = reader["cdr1"].ToString();
+                                dynamic dynamicModel = new ExpandoObject();
+                                var model = (IDictionary<string, object>)dynamicModel;
 
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    string columnName = reader.GetName(i);
+                                    object columnValue = reader[i];
 
-                                cdr1List.Add(cdr1Value);
+                                    model[columnName] = columnValue;
+                                }
 
+                                dynamicModels.Add(dynamicModel);
                             }
                         }
                     }
 
-                    // Convert lists to JSON
-                    string Json = JsonConvert.SerializeObject(cdr1List);
-
-
+                    // Convert dynamic models to JSON
+                    string json = JsonConvert.SerializeObject(dynamicModels);
+                    var Columns = ((IDictionary<string, object>)dynamicModels.FirstOrDefault()).Keys.ToList();
+                    List<dynamic> dynamicList = dynamicModels.Cast<dynamic>().ToList();
+                    DynamicData data = new DynamicData();
+                    data.Columns = Columns;
+                    data.Rows = dynamicList;
                     // Print the JSON
-                    /* Console.WriteLine("cdr1 JSON:");
-                     Console.WriteLine(cdr1Json);
-
-                     Console.WriteLine("\ncdr2 JSON:");
-                     Console.WriteLine(cdr2Json);*/
+                    var DataJson = JsonConvert.SerializeObject(data);
+                    Console.WriteLine(json);
                 }
                 catch (Exception ex)
                 {
@@ -58,43 +63,13 @@ namespace ContosoUniversity.DAL
                 }
             }
         }
-       /* static void Main(string[] args)
-        {
-            string connectionString = "Your_Connection_String"; // Replace with your actual connection string
-            string tableName = "Your_Table_Name"; // Replace with your actual table name
-
-            string columnName = "Your_Column_Name"; // Replace with the desired column name
-
-            string dataType = GetColumnDataType(connectionString, tableName, columnName);
-
-            if (!string.IsNullOrEmpty(dataType))
-            {
-                Console.WriteLine($"Data Type of '{columnName}': {dataType}");
-            }
-            else
-            {
-                Console.WriteLine($"Column '{columnName}' not found.");
-            }
-        }
-
-        static string GetColumnDataType(string connectionString, string tableName, string columnName)
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-
-                DataTable schemaTable = connection.GetSchema("Columns", new string[] { null, null, tableName, columnName });
-
-                if (schemaTable.Rows.Count > 0)
-                {
-                    DataRow row = schemaTable.Rows[0];
-                    return row["DATA_TYPE"].ToString();
-                }
-            }
-
-            return null;
-        }*/
     }
+    public class DynamicData
+    {
+        public List<string> Columns { get; set; }
+        public List<dynamic> Rows { get; set; }
+    }
+
 }
 
 

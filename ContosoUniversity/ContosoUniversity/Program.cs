@@ -21,7 +21,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-DBNew1.getnode();
+DBNew1.Test();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

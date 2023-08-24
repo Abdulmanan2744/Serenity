@@ -4,67 +4,54 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Dynamic;
 using Newtonsoft.Json;
+using System.Reflection.PortableExecutable;
+using System.Runtime.InteropServices;
+
 namespace ContosoUniversity.DAL
 {
     public class DBNew1
     {
-        static public void getnode()
+        public static void Test()
         {
-            string connectionString = "Server=192.168.10.176;Database=SBODemoAU;User Id=sa; Password=P@ssw0rd;";
+          
 
+
+
+
+           /* string connectionString = "Server=DESKTOP-4L73U46;Database=BookListRazor; Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
+                    string query = "INSERT INTO Book(Name, Author, ISBN) VALUES ('dotnet', 'Mani', 'mani2744675')";
+                    string query1 = "DELETE FROM Book WHERE Id IN ('1008', '1009', '1010', '1011')";
+                    string query2 = "Delete From Book WHERE Id='1007'";
 
-                    string query = "SELECT CardCode,CardName, CardType, Address FROM OCRD"; // Replace YourTableName with the actual table name
-
-                    List<ExpandoObject> dynamicModels = new List<ExpandoObject>();
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
+                    using (SqlCommand command = new SqlCommand(query2, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read())
-                            {
-                                dynamic dynamicModel = new ExpandoObject();
-                                var model = (IDictionary<string, object>)dynamicModel;
-
-                                for (int i = 0; i < reader.FieldCount; i++)
-                                {
-                                    string columnName = reader.GetName(i);
-                                    object columnValue = reader[i];
-
-                                    model[columnName] = columnValue;
-                                }
-
-                                dynamicModels.Add(dynamicModel);
-                            }
+                            reader.Read();
                         }
+                        *//*command.ExecuteNonQuery();*//*
                     }
-
-                    // Convert dynamic models to JSON
-                    string json = JsonConvert.SerializeObject(dynamicModels);
-                    var Columns=((IDictionary<string, object>)dynamicModels.FirstOrDefault()).Keys.ToList();
-                    List<dynamic> dynamicList = dynamicModels.Cast<dynamic>().ToList();
-                    DynamicData data = new DynamicData();
-                    data.Columns = Columns;
-                    data.Rows = dynamicList;
-                    // Print the JSON
-                    var DataJson = JsonConvert.SerializeObject(data);
-                    Console.WriteLine(json);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("An error occurred: " + ex.Message);
+                    Console.WriteLine("An error occured" + ex.Message);
                 }
-            }
+                finally
+                {
+                    connection.Close();
+                }
+
+
+
+            }*/
+
+
         }
     }
-    public class DynamicData
-    {
-        public List<string> Columns { get; set;}
-        public List<dynamic> Rows { get; set;}
-    }
 }
+
