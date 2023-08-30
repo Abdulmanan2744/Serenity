@@ -23,6 +23,9 @@
     <EntitySetMapping Name="Projects">
       <EntityTypeMapping TypeName="SoftwareHouseDBModel.Project">
         <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="PEDate" ColumnName="PEDate" />
+          <ScalarProperty Name="PSDate" ColumnName="PSDate" />
+          <ScalarProperty Name="PPrice" ColumnName="PPrice" />
           <ScalarProperty Name="PId" ColumnName="PId" />
           <ScalarProperty Name="PName" ColumnName="PName" />
           <ScalarProperty Name="DId" ColumnName="DId" />

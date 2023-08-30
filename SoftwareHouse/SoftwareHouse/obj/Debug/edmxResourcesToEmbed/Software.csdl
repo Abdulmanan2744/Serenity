@@ -30,6 +30,9 @@
     <Property Name="DId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Department" Relationship="Self.FK__Project__DId__3C69FB99" FromRole="Project" ToRole="Department" />
     <NavigationProperty Name="Employees" Relationship="Self.EmployeeProjects" FromRole="Project" ToRole="Employee" />
+    <Property Name="PPrice" Type="Int32" Nullable="false" />
+    <Property Name="PSDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PEDate" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
   <Association Name="FK__Employee__DId__398D8EEE">
     <End Role="Department" Type="Self.Department" Multiplicity="1" />

@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Data.Linq;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SoftwareHouse
 {
@@ -18,16 +21,377 @@ namespace SoftwareHouse
             /*UpdateQuery();*/
             /*UpdateDepartQuery();*/
 
-         
-            //nothing special 
-           /* List<Employee> employees = new List<Employee>();
-            foreach (var employee in mc.Employees)
-            {
-                employees.Add(employee);
 
+            //!--------- inner join on simple sql query --------->
+            /*try
+            {
+                string connectionString = "Server=DESKTOP-4L73U46;Database=SoftwareHouseDB; Integrated Security= True"; // Replace with your actual connection string
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT E.EName, P.PName, D.DName" +
+                                   " FROM Employee E " +
+                                   "JOIN Project P ON E.PID = P.PID " +
+                                   "JOIN Department D ON E.DID = D.DID";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string employeeName = reader["EName"].ToString();
+                                string projectName = reader["PName"].ToString();
+                                string departmentName = reader["DName"].ToString();
+
+                                Console.WriteLine($"Employee Name: {employeeName}, Project Name: {projectName}, Department Name: {departmentName}");
+                            }
+                        }
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }*/
 
-            
+            //!--------- inner join Order by Project Price ------------>
+            /*try
+            {
+                string connectionString = "Server=DESKTOP-4L73U46;Database=SoftwareHouseDB; Integrated Security=True";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT E.EName, P.PName,P.PPrice, D.DName" +
+                                   " FROM Employee E " +
+                                   "JOIN Project P ON E.PID = P.PID " +
+                                   "JOIN Department D ON E.DID = D.DID" +
+                                   " ORDER BY P.PPrice"; // Adding ORDER BY clause here
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                string employeeName = reader["EName"].ToString();
+                                string projectName = reader["PName"].ToString();
+                                string projectPrice = reader["PPrice"].ToString();
+                                string departmentName = reader["DName"].ToString();
+
+                                Console.WriteLine($"Employee Name: {employeeName}, Project Name: {projectName},Project Price: {projectPrice}, Department Name: {departmentName}");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }*/
+
+            //!--------- inner join Group by Department ID ------------>
+
+            try
+            {
+                string connectionString = "Server=DESKTOP-4L73U46;Database=SoftwareHouseDB; Integrated Security=True";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string query = "SELECT D.DID, D.DName, COUNT(E.EName) AS EmployeeCount, COUNT(P.PName) AS ProjectCount" +
+                                   " FROM Department D " +
+                                   "LEFT JOIN Employee E ON D.DID = E.DID" +
+                                   " LEFT JOIN Project P ON D.DID = P.DID" +
+                                   " GROUP BY D.DID, D.DName"; // Adding GROUP BY clause here
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            
+                            while (reader.Read())
+                            {
+                                string departmentId = reader["DID"].ToString();
+                                string departmentName = reader["DName"].ToString();
+                                Console.WriteLine($"Department ID: {departmentId},Department Name: {departmentName}");
+                                int employeeCount = Convert.ToInt32(reader["EmployeeCount"]);
+                                int projectCount = Convert.ToInt32(reader["ProjectCount"]);
+
+                                Console.WriteLine($" Employee Count: {employeeCount}, Project Count: {projectCount}");
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+
+
+            /// !----------- Inner Join ----->
+            /// !----------- This code bring Employee Name, Department Name and
+            /// Every Project related to that department associate with That department employee------>
+
+            /*try
+            {
+                using(var mc= new SoftwareHouseDBEntities())
+                {
+                    var query = from e in mc.Employees
+                                join d in mc.Departments on e.DId equals d.DId
+                                join p in  mc.Projects on d.DId equals p.DId
+                                select new
+                                {
+                                    EName = e.EName,
+                                    DName = d.DName,
+                                    PName = p.PName
+                                };
+
+                    foreach (var result in query)
+                    {
+                        Console.WriteLine($"Employee Name: {result.EName}, Department Name: {result.DName}, Prjoect Assigned: {result.PName}");
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine (ex.ToString());
+            }*/
+
+            // ----- This query brings all Employees and data relevant to that specific employee ------>
+            /* try
+             {
+                 using (var mc = new SoftwareHouseDBEntities())
+                 {
+                     var query = from e in mc.Employees
+                                 join p in mc.Projects on e.PId equals p.PId
+                                 join d in mc.Departments on e.DId equals d.DId
+
+                                 select new
+                                 {
+                                     EName = e.EName,
+                                     DName = d.DName,
+                                     PName = p.PName
+                                 };
+
+                     foreach (var result in query)
+                     {
+                         Console.WriteLine($"Employee Name: {result.EName}, Department Name: {result.DName}, Prjoect Assigned: {result.PName}");
+                     }
+
+                 }
+
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine(ex.ToString());
+             }*/
+
+
+            //!--------- Order By using Inner join ------------->
+
+            /* try
+             {
+                 using (var mc = new SoftwareHouseDBEntities())
+                 {
+                     var query = from e in mc.Employees
+                                 join p in mc.Projects on e.PId equals p.PId
+                                 join d in mc.Departments on e.DId equals d.DId
+                                 orderby p.PId
+                                 select new
+                                 {
+                                     EName = e.EName,
+                                     DName = d.DName,
+                                     PName = p.PName
+                                 };
+
+                     foreach (var result in query)
+                     {
+                         Console.WriteLine($"Employee Name: {result.EName}, Department Name: {result.DName}, Prjoect Assigned: {result.PName}");
+                     }
+
+                 }
+
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine(ex.ToString());
+             }*/
+
+            //!---------- Group By using Inner join ------------->
+            //!---------- Shows data First Department name and then on 2nd row all employees working in this department and
+            // projects assigned to the eployees in same row ------------->
+            // !----- Also a function commented which shows first all emplyees name and then all projects name
+            // in the Department group --------->
+
+            /*try
+            {
+                using (var mc = new SoftwareHouseDBEntities())
+                {
+                    var query = from e in mc.Employees
+                                join p in mc.Projects on e.PId equals p.PId
+                                join d in mc.Departments on e.DId equals d.DId
+                                group new { e, d, p } by d.DId into grouped
+                                select new
+                                {
+                                    DId = grouped.Key,
+                                    Employees = grouped.Select(g => g.e.EName),
+                                    Department = grouped.Select(g => g.d.DName),
+                                    Projects = grouped.Select(g => g.p.PName)
+                                };
+
+                    foreach (var result in query)
+                    {
+                        
+                        Console.WriteLine($"Project ID: {result.DId}");
+                        Console.WriteLine($"  Department: {result.Department.FirstOrDefault()}");
+
+                        var employeeProjectPairs = result.Employees.Zip(result.Projects, (employee, project) => new { Employee = employee, Project = project });
+
+                        foreach (var pair in employeeProjectPairs)
+                        {
+                            Console.WriteLine($"    Employee Name: {pair.Employee}, Project Name: {pair.Project}");
+                        }
+                        // foreach (var employeeName in result.Employees)
+                         //{
+                         //    Console.WriteLine($"  Employee Name: {employeeName}");
+                         //}
+
+                         //foreach (var projectName in result.Projects)
+                         //{
+                           //  Console.WriteLine($"  Project Name: {projectName}");
+                         //}
+
+                        Console.WriteLine();
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }*/
+
+            //!---------- Left Join Or Left Outer Join ------------->
+            /*try
+            {
+                using (var mc = new SoftwareHouseDBEntities())
+                {
+                    var query = from e in mc.Employees
+                                join p in mc.Projects on e.PId equals p.PId into empProjectGroup
+                                from empProject in empProjectGroup.DefaultIfEmpty()
+                                select new
+                                {
+                                    EmployeeName = e.EName,
+                                    ProjectName = empProject != null ? empProject.PName : "No Project Assigned"
+                                };
+
+                    foreach (var result in query)
+                    {
+                        Console.WriteLine($"Employee Name: {result.EmployeeName}, Project Name: {result.ProjectName}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }*/
+
+            //!--------- Updating Database adding more columns in Project and Employee Table ----->
+            //!---- Left Join Order By  ----->
+            /*try
+            {
+                using (var mc = new SoftwareHouseDBEntities())
+                {
+                    var query = from e in mc.Employees
+                                join p in mc.Projects on e.PId equals p.PId into empProjectGroup
+                                from empProject in empProjectGroup.DefaultIfEmpty()
+                                orderby empProject.PPrice
+                                select new
+                                {
+                                    EmployeeName = e.EName, 
+                                    ProjectName = empProject != null ? empProject.PName : "No Project Assigned",
+                                    ProjectPrice = empProject.PPrice,
+                                    StartDate = empProject.PSDate,
+                                    EndDate = empProject.PEDate
+                                };
+
+                    foreach (var result in query)
+                    {
+                        Console.WriteLine($"Employee Name: {result.EmployeeName},Project Name: {result.ProjectName},Project Price: {result.ProjectPrice},Project Start Date: {result.StartDate},Project End Date: {result.EndDate}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }*/
+
+            //!---- Left Join Group By Project Type ----->
+            /*try
+            {
+                using (var mc = new SoftwareHouseDBEntities())
+                {
+                    var query = from e in mc.Employees
+                                join p in mc.Projects on e.PId equals p.PId into empProjectGroup
+                                from empProject in empProjectGroup.DefaultIfEmpty()
+                                let projectType = empProject
+                                select new
+                                {
+                                    EmployeeName = e.EName,
+                                    ProjectName = empProject != null ? empProject.PName : "No Project Assigned",
+                                    ProjectPrice = empProject.PPrice,
+                                    StartDate = empProject.PSDate,
+                                    EndDate = empProject.PEDate,
+                                    ProjectType = projectType
+                                };
+
+                    var groupedQuery = from result in query
+                                       group result by result.ProjectType;
+
+                    foreach (var group in groupedQuery)
+                    {
+                        Console.WriteLine($"Project Type: {group.Key}");
+
+                        foreach (var result in group)
+                        {
+                            Console.WriteLine($"  Employee Name: {result.EmployeeName}, Project Name: {result.ProjectName}, Project Price: {result.ProjectPrice}, Project Start Date: {result.StartDate}, Project End Date: {result.EndDate}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }*/
+
+
+
+
+
+
+
+
+
+            //nothing special 
+            /* List<Employee> employees = new List<Employee>();
+             foreach (var employee in mc.Employees)
+             {
+                 employees.Add(employee);
+
+             }*/
+
+
 
 
 
@@ -251,7 +615,7 @@ namespace SoftwareHouse
 
 
         // !------ Employee Table  ----->
-        // !------ Created three methods. 2 are private method of getdata and savedata and
+        // !------ Created three methods. 3 are private method of getdata and savedata and
         // 1 is public where query update data ----->
 
         /*private static async Task<Department> GetDepartment()

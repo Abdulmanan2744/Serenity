@@ -37,6 +37,9 @@
           <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PName" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="DId" Type="int" Nullable="false" />
+          <Property Name="PPrice" Type="int" Nullable="false" />
+          <Property Name="PSDate" Type="datetime" Nullable="false" />
+          <Property Name="PEDate" Type="datetime" Nullable="false" />
         </EntityType>
         <Association Name="FK__EmployeePro__EId__3F466844">
           <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
@@ -126,6 +129,9 @@
           <Property Name="DId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Department" Relationship="Self.FK__Project__DId__3C69FB99" FromRole="Project" ToRole="Department" />
           <NavigationProperty Name="Employees" Relationship="Self.EmployeeProjects" FromRole="Project" ToRole="Employee" />
+          <Property Name="PPrice" Type="Int32" Nullable="false" />
+          <Property Name="PSDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="PEDate" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
         <Association Name="FK__Employee__DId__398D8EEE">
           <End Role="Department" Type="Self.Department" Multiplicity="1" />
@@ -200,6 +206,9 @@
           <EntitySetMapping Name="Projects">
             <EntityTypeMapping TypeName="SoftwareHouseDBModel.Project">
               <MappingFragment StoreEntitySet="Project">
+                <ScalarProperty Name="PEDate" ColumnName="PEDate" />
+                <ScalarProperty Name="PSDate" ColumnName="PSDate" />
+                <ScalarProperty Name="PPrice" ColumnName="PPrice" />
                 <ScalarProperty Name="PId" ColumnName="PId" />
                 <ScalarProperty Name="PName" ColumnName="PName" />
                 <ScalarProperty Name="DId" ColumnName="DId" />

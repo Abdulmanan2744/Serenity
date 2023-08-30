@@ -23,6 +23,9 @@ namespace SoftwareHouse
         public int PId { get; set; }
         public string PName { get; set; }
         public int DId { get; set; }
+        public int PPrice { get; set; }
+        public System.DateTime PSDate { get; set; }
+        public System.DateTime PEDate { get; set; }
     
         public virtual Department Department { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -32,6 +32,9 @@
     <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="PName" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="PPrice" Type="int" Nullable="false" />
+    <Property Name="PSDate" Type="datetime" Nullable="false" />
+    <Property Name="PEDate" Type="datetime" Nullable="false" />
   </EntityType>
   <Association Name="FK__EmployeePro__EId__3F466844">
     <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
