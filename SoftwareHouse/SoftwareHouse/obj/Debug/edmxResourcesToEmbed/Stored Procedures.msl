@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SoftwareHouseDBModel1StoreContainer" CdmEntityContainer="SoftwareHouseDBEntities1">
+    <FunctionImportMapping FunctionImportName="GetProjectsByEId" FunctionName="SoftwareHouseDBModel1.Store.GetProjectsByEId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SoftwareHouseDBModel1.GetProjectsByEId_Result">
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="EName" ColumnName="EName" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

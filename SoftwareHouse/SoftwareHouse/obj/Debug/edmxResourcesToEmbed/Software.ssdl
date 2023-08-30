@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SoftwareHouseDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DId" />
+    </Key>
+    <Property Name="DId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EId" />
+    </Key>
+    <Property Name="EId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmployeeProjects">
+    <Key>
+      <PropertyRef Name="EId" />
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="EId" Type="int" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__EmployeePro__EId__3F466844">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="EmployeeProjects" Type="Self.EmployeeProjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EId" />
+      </Principal>
+      <Dependent Role="EmployeeProjects">
+        <PropertyRef Name="EId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__EmployeePro__PId__403A8C7D">
+    <End Role="Project" Type="Self.Project" Multiplicity="1" />
+    <End Role="EmployeeProjects" Type="Self.EmployeeProjects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="EmployeeProjects">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Project__DId__3C69FB99">
+    <End Role="Department" Type="Self.Department" Multiplicity="1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DId" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SoftwareHouseDBModelStoreContainer">
+    <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmployeeProjects" EntityType="Self.EmployeeProjects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Project" EntityType="Self.Project" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__EmployeePro__EId__3F466844" Association="Self.FK__EmployeePro__EId__3F466844">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="EmployeeProjects" EntitySet="EmployeeProjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__EmployeePro__PId__403A8C7D" Association="Self.FK__EmployeePro__PId__403A8C7D">
+      <End Role="Project" EntitySet="Project" />
+      <End Role="EmployeeProjects" EntitySet="EmployeeProjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Project__DId__3C69FB99" Association="Self.FK__Project__DId__3C69FB99">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Project" EntitySet="Project" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

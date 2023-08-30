@@ -1,0 +1,12 @@
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\SoftwareHouse.exe.config
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\SoftwareHouse.exe
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\SoftwareHouse.pdb
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\EntityFramework.dll
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\EntityFramework.SqlServer.dll
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\EntityFramework.xml
+C:\Serenity\SoftwareHouse\SoftwareHouse\bin\Debug\EntityFramework.SqlServer.xml
+C:\Serenity\SoftwareHouse\SoftwareHouse\obj\Debug\SoftwareHouse.csproj.AssemblyReference.cache
+C:\Serenity\SoftwareHouse\SoftwareHouse\obj\Debug\SoftwareHouse.csproj.CoreCompileInputs.cache
+C:\Serenity\SoftwareHouse\SoftwareHouse\obj\Debug\SoftwareHouse.csproj.CopyComplete
+C:\Serenity\SoftwareHouse\SoftwareHouse\obj\Debug\SoftwareHouse.exe
+C:\Serenity\SoftwareHouse\SoftwareHouse\obj\Debug\SoftwareHouse.pdb

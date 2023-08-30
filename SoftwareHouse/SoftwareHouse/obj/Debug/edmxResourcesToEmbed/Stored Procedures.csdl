@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SoftwareHouseDBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SoftwareHouseDBEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="GetProjectsByEId" ReturnType="Collection(SoftwareHouseDBModel1.GetProjectsByEId_Result)">
+      <Parameter Name="EId" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetProjectsByEId_Result">
+    <Property Type="Int32" Name="EId" Nullable="false" />
+    <Property Type="String" Name="EName" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="DId" Nullable="false" />
+  </ComplexType>
+</Schema>

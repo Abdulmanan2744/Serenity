@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="TId" Type="int" />
+  </EntityType>
+  <EntityType Name="CourseStudent">
+    <Key>
+      <PropertyRef Name="CId" />
+      <PropertyRef Name="SId" />
+    </Key>
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="SId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Standard">
+    <Key>
+      <PropertyRef Name="STId" />
+    </Key>
+    <Property Name="STId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="SId" />
+    </Key>
+    <Property Name="SId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="STId" Type="int" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TId" />
+    </Key>
+    <Property Name="TId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="STId" Type="int" />
+  </EntityType>
+  <Association Name="FK__Course__TId__3C69FB99">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1" />
+    <End Role="Course" Type="Self.Course" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="TId" />
+      </Principal>
+      <Dependent Role="Course">
+        <PropertyRef Name="TId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CourseStude__CId__4222D4EF">
+    <End Role="Course" Type="Self.Course" Multiplicity="1" />
+    <End Role="CourseStudent" Type="Self.CourseStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="CourseStudent">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CourseStude__SId__4316F928">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="CourseStudent" Type="Self.CourseStudent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="SId" />
+      </Principal>
+      <Dependent Role="CourseStudent">
+        <PropertyRef Name="SId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student__STId__3F466844">
+    <End Role="Standard" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standard">
+        <PropertyRef Name="STId" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="STId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Teacher__STId__398D8EEE">
+    <End Role="Standard" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standard">
+        <PropertyRef Name="STId" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="STId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolDBModelStoreContainer">
+    <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CourseStudent" EntityType="Self.CourseStudent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Standard" EntityType="Self.Standard" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Course__TId__3C69FB99" Association="Self.FK__Course__TId__3C69FB99">
+      <End Role="Teacher" EntitySet="Teacher" />
+      <End Role="Course" EntitySet="Course" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CourseStude__CId__4222D4EF" Association="Self.FK__CourseStude__CId__4222D4EF">
+      <End Role="Course" EntitySet="Course" />
+      <End Role="CourseStudent" EntitySet="CourseStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CourseStude__SId__4316F928" Association="Self.FK__CourseStude__SId__4316F928">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="CourseStudent" EntitySet="CourseStudent" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student__STId__3F466844" Association="Self.FK__Student__STId__3F466844">
+      <End Role="Standard" EntitySet="Standard" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Teacher__STId__398D8EEE" Association="Self.FK__Teacher__STId__398D8EEE">
+      <End Role="Standard" EntitySet="Standard" />
+      <End Role="Teacher" EntitySet="Teacher" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

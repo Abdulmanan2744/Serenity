@@ -1,0 +1,12 @@
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\QueryTesting.exe.config
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\QueryTesting.exe
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\QueryTesting.pdb
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\EntityFramework.dll
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\EntityFramework.SqlServer.dll
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\EntityFramework.xml
+C:\Serenity\QueryTesting\QueryTesting\bin\Debug\EntityFramework.SqlServer.xml
+C:\Serenity\QueryTesting\QueryTesting\obj\Debug\QueryTesting.csproj.AssemblyReference.cache
+C:\Serenity\QueryTesting\QueryTesting\obj\Debug\QueryTesting.csproj.CoreCompileInputs.cache
+C:\Serenity\QueryTesting\QueryTesting\obj\Debug\QueryTesting.csproj.CopyComplete
+C:\Serenity\QueryTesting\QueryTesting\obj\Debug\QueryTesting.exe
+C:\Serenity\QueryTesting\QueryTesting\obj\Debug\QueryTesting.pdb

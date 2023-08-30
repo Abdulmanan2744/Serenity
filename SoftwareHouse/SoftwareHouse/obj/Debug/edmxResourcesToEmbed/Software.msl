@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SoftwareHouseDBModelStoreContainer" CdmEntityContainer="SoftwareHouseDBEntities">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="SoftwareHouseDBModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="DName" ColumnName="DName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="SoftwareHouseDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="EName" ColumnName="EName" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="SoftwareHouseDBModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EmployeeProjects" TypeName="SoftwareHouseDBModel.EmployeeProjects" StoreEntitySet="EmployeeProjects">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="EId" ColumnName="EId" />
+      </EndProperty>
+      <EndProperty Name="Project">
+        <ScalarProperty Name="PId" ColumnName="PId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
