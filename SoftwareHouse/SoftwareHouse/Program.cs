@@ -20,7 +20,8 @@ namespace SoftwareHouse
 
             /*UpdateQuery();*/
             /*UpdateDepartQuery();*/
-
+            /*UpdateData();*/
+            UpdateDataQuery();
 
             //!--------- inner join on simple sql query --------->
             /*try
@@ -96,7 +97,7 @@ namespace SoftwareHouse
 
             //!--------- inner join Group by Department ID ------------>
 
-            try
+            /*try
             {
                 string connectionString = "Server=DESKTOP-4L73U46;Database=SoftwareHouseDB; Integrated Security=True";
 
@@ -106,9 +107,9 @@ namespace SoftwareHouse
 
                     string query = "SELECT D.DID, D.DName, COUNT(E.EName) AS EmployeeCount, COUNT(P.PName) AS ProjectCount" +
                                    " FROM Department D " +
-                                   "LEFT JOIN Employee E ON D.DID = E.DID" +
-                                   " LEFT JOIN Project P ON D.DID = P.DID" +
-                                   " GROUP BY D.DID, D.DName"; // Adding GROUP BY clause here
+                                   "LEFT JOIN Employee E ON D.DId = E.DId" +
+                                   " LEFT JOIN Project P ON D.DId = P.DId" +
+                                   " GROUP BY D.DId, D.DName"; // Adding GROUP BY clause here
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -117,7 +118,7 @@ namespace SoftwareHouse
                             
                             while (reader.Read())
                             {
-                                string departmentId = reader["DID"].ToString();
+                                string departmentId = reader["DId"].ToString();
                                 string departmentName = reader["DName"].ToString();
                                 Console.WriteLine($"Department ID: {departmentId},Department Name: {departmentName}");
                                 int employeeCount = Convert.ToInt32(reader["EmployeeCount"]);
@@ -132,7 +133,7 @@ namespace SoftwareHouse
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-            }
+            }*/
 
 
 
@@ -615,8 +616,8 @@ namespace SoftwareHouse
 
 
         // !------ Employee Table  ----->
-        // !------ Created three methods. 3 are private method of getdata and savedata and
-        // 1 is public where query update data ----->
+        // !------ Created four methods. 3 are private method of getdata , savedata and deletedata,
+        // 1 is public where query updates data ----->
 
         /*private static async Task<Department> GetDepartment()
         {
@@ -691,6 +692,159 @@ namespace SoftwareHouse
 
          }*/
 
+
+        //!---------- Using Async method changing multiple columns of a row  -------------->
+        /*private static async Task<Project> GetProject()
+        {
+            Project project = null;
+            try
+            {
+                using(var mc = new SoftwareHouseDBEntities())
+                {
+                    project = await (mc.Projects.Where(p => p.DId == 3).FirstOrDefaultAsync<Project>());
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return project;
+        }*/
+        /*private static async Task SaveProject(Project proj)
+        {
+            try
+            {
+                using(var mc = new SoftwareHouseDBEntities())
+                {
+                    mc.Entry(proj).State = EntityState.Unchanged;
+                    await( mc.SaveChangesAsync());
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }*/
+        /*public static void UpdateData()
+        {
+            var query = GetProject();
+            query.Wait();
+            var project = query.Result;
+            Console.WriteLine("Enter your Project Name");
+            project.PName = Console.ReadLine();
+            Console.WriteLine("Enter your Project Price in Dollars");
+            string input = Console.ReadLine();
+            
+            if (int.TryParse(input, out int price))
+            {
+                project.PPrice = price;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+            }
+            Console.WriteLine("Enter your Project Start Date");
+            string inputDate = Console.ReadLine();
+            if (DateTime.TryParse(inputDate, out DateTime date))
+            {
+                project.PSDate = date;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+            }
+            Console.WriteLine("Enter your Project End Date");
+            string inputEDate = Console.ReadLine();
+            if (DateTime.TryParse(inputEDate, out DateTime date1))
+            {
+                project.PEDate = date1;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+            }
+            var savedata = SaveProject(project);
+            savedata.Wait();
+        }*/
+
+
+
+        //!---------- Using Async method changing multiple rows and columns of per row  -------------->
+
+        /*private static async Task<List<Project>> GetProjects()
+        {
+            List<Project> projects = new List<Project>();
+            try
+            {
+                using(var mc = new SoftwareHouseDBEntities())
+                {
+                    projects = await (mc.Projects.Where(p => p.DId == 3).ToListAsync());
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return projects;
+        }*/
+        /*private static async Task SaveProject(Project proj)
+        {
+            try
+            {
+                using(var mc = new SoftwareHouseDBEntities())
+                {
+                    mc.Entry(proj).State = EntityState.Modified;
+                    await (mc.SaveChangesAsync());
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }*/
+
+        /*public async static void UpdateDataQuery()
+        {
+            var query = await GetProjects();
+            //query.Wait();
+            //var projectList = query.Result;
+            foreach (var project in query)
+            {
+                Console.WriteLine($"Updating Project {project.PName} (ID: {project.PId})");
+                Console.WriteLine("Update Project Name");
+                project.PName = Console.ReadLine();
+                Console.WriteLine("Update Project Price");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out int price))
+                {
+                    project.PName = price.ToString();
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect values");
+                }
+                Console.WriteLine("Update Project Start Date");
+                string input1 = Console.ReadLine();
+                if (DateTime.TryParse(input1, out DateTime date))
+                {
+                    project.PSDate = date;
+                }
+                else
+                {
+                    Console.WriteLine("Invald Values");
+                }
+                Console.WriteLine("Update Project End Date");
+                string input2 = Console.ReadLine();
+                if (DateTime.TryParse(input2, out DateTime date2))
+                {
+                    project.PEDate = date2;
+                }
+                else
+                {
+                    Console.WriteLine("Invald Values");
+                }
+            }
+        }*/
 
 
 
